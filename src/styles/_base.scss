@@ -1,0 +1,46 @@
+$color-primary: #334766;
+$color-secondary: #ffffff;
+
+$color-fault: #eb5757;
+$color-success: #219653;
+
+$font-display: Roboto Light, Avenir, Helvetica, Arial, sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-display;
+  color: $color-primary;
+  font-weight: normal;
+  line-height: 1.9rem;
+}
+
+.spinner {
+  animation: rotate 1s infinite;
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.u-text-size-12px{
+  font-size: 1.2rem !important;
+}
